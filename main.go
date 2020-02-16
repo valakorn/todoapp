@@ -27,7 +27,7 @@ func todosHandler(w http.ResponseWriter, r *http.Request) {
 	// }
 
 	//t.Execute(w, []string{"learn golang", "practise execercise", "make coffee"})
-	t.Execute(w, readLine)
+	t.Execute(w, readLines)
 	//w.Write([]byte("hello"))
 }
 func newHandler(w http.ResponseWriter, r *http.Request) {
