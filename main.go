@@ -14,7 +14,7 @@ func main() {
 	http.HandleFunc("/todos", todosHandler)
 	http.HandleFunc("/todos/new", newHandler)
 	http.HandleFunc("/todos/create", createHandler)
-	http.Handle("/static/", http.FileServer(http.Dir("ccs")))
+	http.Handle("/static/", http.StripPrefix("/static/", http.FileServer(http.Dir("static"))))
 	http.ListenAndServe(":8080", nil)
 }
 
