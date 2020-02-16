@@ -3,15 +3,16 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Document</title>
 </head>
 <body>
     <a href="/todos/new">Add Todo </a>
    
-        </table>
-        <tbody >
+        <table>
+        <tbody>
             {{ range .}}
-            <tr><td>{{ . }} </td> </tr>
+            <tr><td>{{ .  }} </td> </tr>
             {{end}}
         </tbody>
     </table>
