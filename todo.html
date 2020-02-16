@@ -1,0 +1,13 @@
+{{define "body" }}
+
+<a href="/todos/new">Add Todo </a>
+   
+<table class="table table-striped">
+<tbody>
+    {{ range .}}
+    <tr><td>{{ .  }} </td> </tr>
+    {{end}}
+</tbody>
+</table>
+
+{{ end }}
